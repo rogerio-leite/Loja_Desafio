@@ -26,7 +26,7 @@ public class TelaInicialView extends javax.swing.JFrame {
         this.permissaoAcesso = permissao;
         initComponents();
         this.setLocationRelativeTo(null);
-        permissao = 1;
+        
         if(permissao == 1){
             painelFuncionario.setVisible(false);
         }else{
