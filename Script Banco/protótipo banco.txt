@@ -1,0 +1,23 @@
+produto
+ - codigo_produto (serial)
+ - descricao_produto (varchar)
+ - preco_produto (double)
+
+documento
+ - numero_venda (integer)
+ - total_venda (double)
+ - confirmacao_venda (booblean)
+
+venda_itens 
+ - id_documento (integer)
+ - id_item (integer)
+
+permissao
+ - id (integer)
+ - descricao (varchar)
+
+acesso
+ - login (varchar)
+ - senha (varchar)
+ - nome (varchar)
+ - permissao (integer)
