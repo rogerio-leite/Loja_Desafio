@@ -1,0 +1,87 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.5
+-- Dumped by pg_dump version 10.5
+
+-- Started on 2018-08-24 08:35:21
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 2823 (class 0 OID 16407)
+-- Dependencies: 196
+-- Data for Name: acesso; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.acesso (login, senha, nome, permissao) VALUES ('admin', '1234', 'Administrador do Sistema', 1);
+INSERT INTO public.acesso (login, senha, nome, permissao) VALUES ('vendedor', '4321', 'Vendedor da Loja', 2);
+
+
+--
+-- TOC entry 2827 (class 0 OID 16433)
+-- Dependencies: 200
+-- Data for Name: documento; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2825 (class 0 OID 16414)
+-- Dependencies: 198
+-- Data for Name: permissoes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.permissoes (id, descricao) VALUES (1, 'Admin');
+INSERT INTO public.permissoes (id, descricao) VALUES (2, 'Vendedor');
+
+
+--
+-- TOC entry 2829 (class 0 OID 16470)
+-- Dependencies: 202
+-- Data for Name: produto; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2828 (class 0 OID 16455)
+-- Dependencies: 201
+-- Data for Name: venda_itens; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+
+
+--
+-- TOC entry 2842 (class 0 OID 0)
+-- Dependencies: 199
+-- Name: documento_numero_venda_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.documento_numero_venda_seq', 1, false);
+
+
+--
+-- TOC entry 2843 (class 0 OID 0)
+-- Dependencies: 197
+-- Name: permissoes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.permissoes_id_seq', 1, false);
+
+
+-- Completed on 2018-08-24 08:35:22
+
+--
+-- PostgreSQL database dump complete
+--
+
